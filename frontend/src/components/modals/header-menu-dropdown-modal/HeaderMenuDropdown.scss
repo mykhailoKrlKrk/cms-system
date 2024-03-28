@@ -1,0 +1,54 @@
+@import "../../../assets/mixins.scss";
+
+.header-menu-dropdown-modal {
+    position: static;
+    height: 100%;
+    width: 50% !important;
+    min-width: 220px !important;
+    max-width: 250px !important;
+    margin-right: 10px !important;
+    padding: 0;
+    z-index: 10;
+
+    .ant-modal-content {
+        padding-top: 30px;
+        height: 100%;
+        border: 1px solid black;
+
+        .ant-modal-body {
+            height: 100%;
+            padding-top: 20px;
+
+            .notification-user-holder {
+                @include flex-center;
+                width: 180px;
+                gap: 10%;
+        
+                .notification-holder {
+                    svg {
+                        fill: black;
+                    }
+                }
+
+                .user-holder {
+                    color: black;
+                    svg {
+                        fill: black;
+                    }
+                }
+            }
+        }
+
+        .ant-modal-footer {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 430px){
+    .header-menu-dropdown-modal {
+        .notification-user-holder {
+            display: none !important;
+        }
+    }
+}

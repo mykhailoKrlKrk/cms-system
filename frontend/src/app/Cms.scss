@@ -1,0 +1,13 @@
+.sidebar-main-holder {
+  display: flex;
+
+  .sidebar {
+    width: 20%;
+    max-width: 150px;
+    min-width: 150px;
+  }
+
+  .page {
+    width: 100%;
+  }
+}

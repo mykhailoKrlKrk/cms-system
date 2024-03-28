@@ -1,0 +1,48 @@
+@import "../../../assets/variables/variables.scss";
+
+.pagination-row {
+    position: absolute;
+    top: 500px;
+    padding-left: inherit;
+    padding-right: inherit;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .pagination-buttons-holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        padding: 0 5px 0 5px;
+        gap: 10px;
+
+        .pagination-button {
+            border-radius: 10px;
+            border: 1px solid black;
+            height: 35px;
+            width: 40px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .pagination-button:hover {
+            background-color: $active-link-color;
+            border: 0px;
+            color: white;
+        }
+
+        .focused-button {
+            background-color: #7c25df6c;
+            border: 0px;
+            color: white;
+        }
+
+        .focused-button:hover {
+            background-color: $active-link-color;
+            color: white;
+        }
+    }
+}

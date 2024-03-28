@@ -1,0 +1,23 @@
+{
+  "name": "CMS",
+  "short_name": "CMS",
+  "start_url": "/",
+  "description": "Web application for students to track tasks and general performance.",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#808080",
+
+  "icons": [
+    {
+      "src": "../../src/assets/images/Logo white transparent.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+
+    {
+      "src": "./cms-icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}

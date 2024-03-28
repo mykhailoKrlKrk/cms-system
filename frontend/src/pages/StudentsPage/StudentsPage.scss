@@ -1,0 +1,38 @@
+.sudent-page {
+    position: relative;
+    margin-top: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+
+
+    .h1-container {
+      background-color: #6c8bbd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      box-shadow: 0 4px 8px rgba(1, 1, 1, 0.4);
+      border-radius: 10px;
+      margin-bottom: 25px;
+      
+        .students-h1 {
+          font-weight: 100;
+          padding-left: 10px;
+        }
+
+    }
+
+    
+}
+
+@media screen and (max-width: 900px){
+    .sudent-page {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .sudent-page {
+        padding-left: 20px;
+    }
+}

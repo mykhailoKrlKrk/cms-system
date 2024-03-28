@@ -1,0 +1,51 @@
+@import "../../../assets/variables/variables.scss";
+@import "../../../assets/mixins.scss";
+
+.main-header {
+    padding: 0 1.5% 0 0;
+    background-color: $site-blue-color;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+
+    .main-header-logo {
+      margin-right: auto; 
+      color: #fff;
+      width: 100px;
+      height: 100px;
+      display: flex; 
+      justify-content: flex-start; 
+      align-items: center; 
+
+        .cms-logo-image {
+          height: 60%;
+          width: auto;
+        }
+    }
+
+    .header-content-holder {
+        @include flex-center;
+        gap: 5px;
+
+        .notification-user-holder {
+            @include flex-center;
+            width: 180px;
+            gap: 10%;
+    
+            .bi {
+                min-width: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 430px){
+    .main-header {
+        .notification-user-holder {
+            display: none !important;
+        }
+    }
+    
+}

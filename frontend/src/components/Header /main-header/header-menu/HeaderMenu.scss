@@ -1,0 +1,25 @@
+@import "../../../../assets/mixins.scss";
+@import "../../../../assets/variables/variables.scss"; 
+
+.header-menu-holder {
+    display: none;
+    background-color: #00000000;
+    border: 0px;
+    padding: 0px;
+}
+
+@media screen and (max-width: 768px){
+    .header-menu-holder {
+        @include flex-center;
+        margin-right: 5px;
+    }
+
+    .header-menu-holder:hover {
+        background-color: #00000000 !important;
+        border: 0px;
+
+        svg {
+            fill: $active-link-color;
+        }
+    }
+}

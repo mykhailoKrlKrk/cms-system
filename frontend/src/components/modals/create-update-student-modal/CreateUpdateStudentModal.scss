@@ -1,0 +1,92 @@
+@import "../../../assets/variables/variables.scss";
+
+.create-update-form-modal {
+    min-height: 450px;
+    height: fit-content;
+    width: 450px !important;
+
+
+    .ant-modal-content {
+        position: relative;
+        height: 100% !important;
+        border: 1px black solid; 
+        border-radius: 10px;
+        padding: 0;
+
+        .ant-form-item-label>label.ant-form-item-required::before{
+            content: none;
+        }
+
+        .ant-modal-header {
+            background-color: #6182b6;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px;
+            border-bottom: 1px solid black;
+        }
+    
+        .ant-modal-body {
+            width: 100%;
+            min-height: 350px;
+            height: fit-content;
+
+            align-items: center;
+            display: flex;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            
+            .student-form {
+                label {
+                    width: 160px;
+                }
+            }
+        }
+    
+        .ant-modal-footer {
+            background-color: #6182b6;
+            margin: 0px;
+            min-height: 50px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+            border-top: 1px solid black;
+            border-radius: 8px;
+    
+            .modal-button {
+                border-radius: 0px;
+                background-color: white;;
+                border: 1px solid black;
+                border-radius: 5px;
+                color: black
+            }
+    
+            .modal-button:hover {
+              background-color: #1cddff5e;
+            }
+    
+            .create-button {
+                border: black 1px solid;
+                color: black;
+            }
+    
+            .create-button:hover {
+              background-color: #1cddff5e;
+            }
+
+            .update-button {
+                border: #007599 1px solid;
+                color: #007599;
+            }
+    
+            .update-button:hover {
+                background-color: #1cddff5e;
+            }
+        }
+    }
+}

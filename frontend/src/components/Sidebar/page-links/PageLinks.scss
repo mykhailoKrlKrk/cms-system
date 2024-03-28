@@ -1,0 +1,45 @@
+@import "../../../assets/variables/variables.scss"; 
+
+ul.page-links-list {
+    list-style: none;
+    padding: 0;
+    width: 120px;
+    
+    li {
+        margin-bottom: 10px;
+        position: relative;
+        width: fit-content;
+        a {
+            font-family: $font-family;
+            padding-bottom: 1px;
+            color: #363636;
+            font-size: 22px;
+        }
+
+        a.active-page {
+            font-weight: 600;
+        }
+
+        a:before {
+            content: '';
+            background: $active-link-color;
+            display: block;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:hover {
+            background-position: 0;
+            color: $active-link-color;
+            font-size: 20px;
+        }
+
+        a:hover::before {
+            width: 100%;
+        }
+    }
+}

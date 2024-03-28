@@ -1,0 +1,14 @@
+@import "../../assets/variables/variables.scss";
+
+.sidebar {
+    background-color: #aeb5b8;
+    padding-top: 30px;
+    padding-left: 30px;
+    border-right: 2px solid black;
+}
+
+@media screen and (max-width: 768px){
+    .sidebar {
+        display: none;
+    }
+}

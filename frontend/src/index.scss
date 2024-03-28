@@ -1,0 +1,40 @@
+@import "./assets/variables/variables.scss";
+
+html {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    min-height: 100%;
+    min-width: 100%;
+    height: fit-content;
+    width: fit-content;
+    background-color: #D3D3D3;
+
+    body {
+        font-family: $font-family;
+        margin: 0;
+        display: block;
+        width: 100vw;
+        overflow-x: hidden;
+        height: fit-content;
+        #root {
+            height: fit-content;
+            > div {
+                height: fit-content;
+                display: block;
+                .page {
+                    height: calc(100% - 120px);
+                    min-height: 90vh;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+:root {
+    a {
+        text-decoration: none;
+    }
+}

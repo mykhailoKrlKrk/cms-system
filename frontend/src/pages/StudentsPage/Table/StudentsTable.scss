@@ -1,0 +1,51 @@
+@import "../../../assets/variables/variables.scss"; 
+
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.1rem; 
+    margin: auto;
+
+    th, td {
+      border: 1px solid #0c0c0c;
+      padding: 1rem;
+    }
+
+    th {
+        background-color: $site-light-blue-color;
+    }
+
+    th.checkbox-cell {
+        width: 10%;
+    }
+
+    th.options-buttons-cell {
+        width: 20%;
+    }
+
+    th.status-cell {
+        width: 10%;
+    }
+
+    th.gender-cell {
+        width: 10%;
+    }
+
+    td {
+        font-weight: 500;
+
+        .status-circle {
+            background-color: $site-light-blue-color;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        .green {
+            background-color: $site-green-color;
+        }
+    }
+}

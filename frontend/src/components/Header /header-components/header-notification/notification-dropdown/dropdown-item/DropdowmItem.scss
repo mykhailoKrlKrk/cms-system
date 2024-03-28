@@ -1,0 +1,50 @@
+@import "../../../../../../assets/variables/variables.scss";
+
+.notification-dropdown-item-holder {
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+
+    .student-info-holder {
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+        flex-wrap: wrap;
+        
+        .student-name-holder {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            color: $site-blue-color;
+        }
+
+        svg {
+            fill: $site-blue-color;
+        }
+    }
+
+    .message-holder {
+        padding: 0 5px 0 5px;
+        height: 100% !important;
+        border: 1px solid $site-blue-color;
+        background-color: #aaaaaa36;
+        font-style: italic;
+        color: $site-blue-color;
+        border-radius: 10px;
+        width: 70%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        
+        div {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+}

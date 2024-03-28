@@ -1,0 +1,32 @@
+@import "../../../../assets/mixins.scss";
+@import "../../../../assets/variables/variables.scss";
+
+.user-holder {
+    @include flex-center;
+    width: 100%;
+    gap: 5%;
+    position: relative;
+    
+    .user-name {
+      color: black;
+      font-size: 16px;
+      margin: 0px 10px 0px 5px;
+      white-space: nowrap;
+    }
+
+    .user-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid;
+      margin: 0px 5px 0px 5px;
+    }
+}
+
+.user-holder:hover {
+    cursor: pointer;
+
+    .user-dropdown {
+        display: block;
+    }
+}

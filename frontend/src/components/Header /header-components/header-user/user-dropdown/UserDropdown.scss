@@ -1,0 +1,33 @@
+@import "../../../../../assets//variables/variables.scss";
+
+.user-dropdown {
+    background-color: white;
+    height: fit-content;
+    width: 120px;
+    position: absolute;
+    left: 10px;
+    top: 22px;
+    border: 1px solid $site-blue-color;
+    border-radius: 10px;
+    z-index: 1;
+    display: none;
+    
+    ul {
+        margin: 15px 0 15px 20px;
+        padding: 0px;
+        list-style: none;
+        
+        li {
+            margin-bottom: 10px;
+            position: relative;
+            a {
+                padding-bottom: 1px;
+                color: $site-blue-color;
+            }
+
+            a:hover {
+                color: $active-link-color;
+            }
+        }
+    }
+}

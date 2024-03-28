@@ -1,0 +1,55 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-default-students
+      author: mykhailoKrk
+      changes:
+
+        - insert:
+            tableName: students
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: group
+                  value: "PZ-27"
+              - column:
+                  name: first_name
+                  value: "Bob"
+              - column:
+                  name: last_name
+                  value: "Martin"
+              - column:
+                  name: gender
+                  value: "M"
+              - column:
+                  name: status
+                  value: "isActive"
+              - column:
+                  name: birthday
+                  value: '2008-03-02'
+
+        - insert:
+            tableName: students
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: group
+                  value: "PZ-26"
+              - column:
+                  name: first_name
+                  value: "Joe"
+              - column:
+                  name: last_name
+                  value: "Lone"
+              - column:
+                  name: gender
+                  value: "M"
+              - column:
+                  name: status
+                  value: "isActive"
+              - column:
+                  name: birthday
+                  value: '2008-03-05'
